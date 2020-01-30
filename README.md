@@ -1,30 +1,25 @@
-# _Movie tickets_
+# _pig dice_
 
-#### _This website was created to help calculate ticket costs. Last updated 01/28/20_
+#### _This website was created to give the user a fun game to play. Last updated 01/30/20_
 
-#### By _**K. Wicz, MC Hammer**_
+#### By Mai cook and Jason Stocks**_
 
-
-## Preview
-
-![Landing Page Preview](/img/movie-tickets.png)
 
 **[View Live Preview](https://github.com/LonleyBuzzyBee/pig-dice)**
 
 ## Description
 
-User presses the play button and receives a random number between 1-6. 
-With numbers 2-5 user gets a second roll and that is added to player total provided a 1 or 6 is  not rolled. Upon a 1 or 6 player turn ends and it is the next players turn.
-## Project Specifications
+this webpaage was made to entertain the user with a simple game of pig dice. the user inputs name to determine player order. Clicks play to go to next play screen. click toss to start first roll. they then get a random number between 1 and 6. The player roll any other number than 1 or 6 it is added to thier score. and the players turn continues. If player presses hold their turn holds and it becomes the next players turn. players continue tossing until a player reaches 100 then they press the hold button to claim player points. then it takes them to the winning page.
 
 | Behavior | Input | Output |
 |---|---|---|
-|  user presses play and receivies a number 1-6 |  press play|   a number 1-6 is displayed  |
-|  user receivies a 1 or 6| press play button |   1 or 6 player turn is over and player receives no score.  |
-|   |  |     |
-|  |     |   |
-|    |    |  |
-|   |   |    |
+|User inputs name| User name  |  Output player name |
+| User clicks play button and takes to next page | click play | Takes player to next page|
+|  user presses toss and receivies a random number|  press toss|   a random number between 1-6 |
+|  user receivies a 1 or 6 proceed to player 2 turn| 1 or 6|  player 2 takes turn |
+| User recieves a number that is not 1 or 6 player get another roll  |  4|   select toss again  |
+| player rolls until thye get to 100 then click hold to claim points and win |   click hold | winning page pops up. |
+
 ## Setup/Installation Requirements
 
 _In Terminal:_
@@ -52,7 +47,7 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/kwicz/movie-tickets/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/jstocks01/pig-dice/issues) here on GitHub._
 
 ## Technologies Used
 
@@ -67,4 +62,4 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2020 **_K.Wicz_**
+Copyright (c) 2020 **_Mai Cook and Jason Stocks**
