@@ -21,3 +21,6 @@ form {
 .play {
   display: none;
 }
+.win {
+  display:none; 
+}

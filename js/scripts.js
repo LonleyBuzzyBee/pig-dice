@@ -1,15 +1,18 @@
-function Pc(playerName) {
-  this.playerName,
-  this.roll1 = 0
+function Pc(name) {
+  this.name = name;
+  this.initScore = 0;
 }
 
 // Pc.prototype.initToss = function() {
 
-  Pc.prototype.initToss = function() {
-  Math.floor(Math.random() * 6) + 1;
-    return this.roll1
-    
+  function diceToss() {
+    return Math.floor(Math.random() * 6) + 1;
       }
+
+  Pc.prototype.newTotalScore = function() {
+    this.initScore += standardScore
+  }
+    
   
 
 
@@ -18,38 +21,50 @@ function Pc(playerName) {
 //     var diceRoll = $(".btn").val();
 //     initToss(diceRoll);
 
+//user logic
 
-
-
-
+//global var for score string, or users scores
 var p1 = "";
+var p2 = "";
 var standardScore = 0;
-//start page
+var initTurn = 1;
+
+// initial submit in user log
+
 $(document).ready(function() {  
-  event.preventDefault();
   $("form").submit(function(event){
-  var name = $("form").val();
-  pTurn = New Pc ($("input.name1").val());
-  $(".namepc").text(pTurn.name);
-  $(".start").show();
-  $(".play").hide();
+  event.preventDefault();
+  var playersName = $("input.name1").val();
+  p1 = new Pc(playersName);
+  p2 = new Pc(playersName)
+  $(".namepc").text(p1.name);
+  $(".namepc").text(p2.name);
+  console.log(p1.name);
+  $(".start").hide();
+  $(".play").show();
   });
   // toss button
 $(".btn").click(function() {
-  var playerRoll = initToss();
+  var playerRoll = diceToss();
   $(".score").text(playerRoll);
   if (playerRoll == 1) {
-    if (p1 == 1) {
-      p1 =0;
-      $("#play-turn").hide();
+    if (initTurn == 1) {
+      initTurn =0;
+      $("#play1-turn").hide();
+      $("#play2-turn").show();
     } else {
-      p1 = 1;
-      $("#play-turn").show();
+      initTurn = 1;
+      $("#play1-turn").show();
+      $("#play2-turn").hide();
     }
     standardScore = 0;
-    $
-
+    $(".tempScore").text(standardScore);
+    } else {
+    standardScore =+ playerRoll;
+    $(".tempScore").text(standardScore);
   }
 
-} 
+
+
+});
 });
