@@ -1,9 +1,11 @@
-function Pc() {
+function Pc(playerName) {
   this.playerName,
   this.roll1 = 0
 }
 
-Pc.prototype.initToss = function() {
+// Pc.prototype.initToss = function() {
+
+  Pc.prototype.initToss = function() {
   Math.floor(Math.random() * 6) + 1;
     return this.roll1
     
@@ -20,13 +22,14 @@ Pc.prototype.initToss = function() {
 
 
 
-
+var p1 = "";
+var standardScore = 0;
 //start page
 $(document).ready(function() {  
   event.preventDefault();
   $("form").submit(function(event){
   var name = $("form").val();
-  pTurn = New Pc($("input.name1").val());
+  pTurn = New Pc ($("input.name1").val());
   $(".namepc").text(pTurn.name);
   $(".start").show();
   $(".play").hide();
@@ -34,6 +37,19 @@ $(document).ready(function() {
   // toss button
 $(".btn").click(function() {
   var playerRoll = initToss();
+  $(".score").text(playerRoll);
+  if (playerRoll == 1) {
+    if (p1 == 1) {
+      p1 =0;
+      $("#play-turn").hide();
+    } else {
+      p1 = 1;
+      $("#play-turn").show();
+    }
+    standardScore = 0;
+    $
+
+  }
 
 } 
 });
