@@ -8,26 +8,48 @@
   <title>Pig-Dice</title>
 </head>
 <body>
-  <div class="container"> 
-    <div class="start">
-    <form>
-      <div class ="form-group">
-    <label for="player1">Player 1</label>
-    <input type="text" class="name1">
-    <button type="submit">Enter name</button>
-    <label for="player2">Player 2</label>
-    <input type="text" class="name2">
-   
-    </form>
-      </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="start">
+        <form>
+          <div class ="form-group">
+            <label id="player1">Player 1</label>
+            <input type="text" class="name1">
+            </div>
+            <div class="column">
+            <label id="player2">Player 2</label>
+            <input type="text" class="name2"> 
+            <button type="submit">Enter name</button> 
+            </div>
+          </div>
+        </form>
+        </div>
+      </div> 
     </div>
-    <div class="play" id="play-turn">
-      <p id="play1-turn"></p>
-      <p id="play2-turn"></p>
-      <button class= "btn">Toss</button>
-      <p class="score"></p>
-      <h2 class="tempScore">score</h2>
-      <button class= "btn-hold">Hold</button> -->
+    <div class="card" id="play-turn">
+      <div class="row">
+        <div class="column">
+          <div class="play1-turn">
+          <p id="player1-name"></p>
+          <p id="play1-score"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="play2-turn">
+          <p id="player2-name"></p>
+          <p id="play2-score"></p>
+          </div>
+        </div>
+      </div>
+      <h2 class="currentToss">Your toss</h2>
+        <p class="toss"></p>
+        <h2 class="tempScore">score</h2>
+          <p class="score"></p>
+          <button class= "btn">Toss</button>
+          <button class= "btn-hold">Hold</button>
     </div>
     <div class="win">
       <p>&#10024 Your champion!! &#10024</p>
